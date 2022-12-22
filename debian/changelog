@@ -1,0 +1,149 @@
+python-xattr (0.9.7-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Federico Ceratto <federico@debian.org>  Mon, 22 Jun 2020 00:08:05 +0100
+
+python-xattr (0.9.6-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Federico Ceratto <federico@debian.org>  Thu, 06 Sep 2018 12:06:53 +0100
+
+python-xattr (0.9.3-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * No longer disable PIE during build
+  * d/tests/cli: Set correct exit code when compared data are different
+  * Remove unnecessary python{3,}-cffi depends (Closes: #849746)
+
+  [ Federico Ceratto ]
+  * New upstream release (Closes: #890529)
+  * Move VCS to Salsa
+
+ -- Federico Ceratto <federico@debian.org>  Fri, 23 Feb 2018 17:17:13 +0000
+
+python-xattr (0.9.1-1) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * New upstream release
+  * Add xattr and python3-xattr binary package
+  * Enable autopkgtest-pkg-python testsuite and cli test
+  * Fixed homepage to real URL
+  * Removed pre-wheezy versioned build depends
+  * Bumped Standards-Version to 3.9.8 (no changes needed)
+  * Enabled all but PIE hardening
+  * d/copyright: Added myself for Debian part
+  * Bumped debhelper compat version to 10
+
+ -- Federico Ceratto <federico@debian.org>  Sun, 11 Dec 2016 14:26:28 +0100
+
+python-xattr (0.7.8-3) unstable; urgency=medium
+
+  * Add python-cffi runtime dependency
+
+ -- Federico Ceratto <federico@debian.org>  Sat, 13 Feb 2016 17:29:14 +0000
+
+python-xattr (0.7.8-2) unstable; urgency=low
+
+  * New upstream release (Closes: #813075)
+
+ -- Federico Ceratto <federico@debian.org>  Mon, 08 Feb 2016 09:39:26 +0000
+
+python-xattr (0.6.4-3) unstable; urgency=low
+
+  * Add PSF to copyright (Closes: #689282)
+  * Remove DM-Upload-Allowed field
+  * Bump Standards-Version to 3.9.5
+  * Update d/watch to use Github
+  * Update Vcs fields
+
+ -- Federico Ceratto <federico.ceratto@gmail.com>  Mon, 07 Jul 2014 23:59:06 +0100
+
+python-xattr (0.6.4-2) unstable; urgency=low
+
+  * python-support dependency removed (Closes: #673713)
+  * Standards-Version bumped to 3.9.3, no changes needed.
+
+ -- Federico Ceratto <federico.ceratto@gmail.com>  Fri, 29 Jun 2012 20:17:18 +0100
+
+python-xattr (0.6.4-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Federico Ceratto <federico.ceratto@gmail.com>  Sat, 18 Feb 2012 15:31:18 +0000
+
+python-xattr (0.6.2-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Federico Ceratto <federico.ceratto@gmail.com>  Fri, 19 Aug 2011 13:28:08 +0000
+
+python-xattr (0.6-1) unstable; urgency=low
+
+  * New upstream release (Closes: #592860)
+  * Standards-Version bumped to 3.9.1, no changes needed.
+
+ -- Federico Ceratto <federico.ceratto@gmail.com>  Mon, 23 Aug 2010 16:53:32 +0100
+
+python-xattr (0.4-5) unstable; urgency=low
+
+  * New maintainer. (Closes: #579614)
+  * package rebuilt from scratch
+    - Built using dh7
+    - Standards-Version bumped to 3.9.0, no changes needed
+    - Manpage added (thanks David Paleino)
+
+ -- Federico Ceratto <federico.ceratto@gmail.com>  Sun, 04 Jul 2010 20:36:08 +0100
+
+python-xattr (0.4-4) unstable; urgency=low
+
+  * depend on python-pkg-resources (Closes: #468703)
+  * use Vcs-Git instead of XS-Vcs-Git
+
+ -- Guido Guenther <agx@sigxcpu.org>  Sun, 02 Mar 2008 14:32:44 +0100
+
+python-xattr (0.4-3) unstable; urgency=low
+
+  * depend on python-setuptools (Closes: #456716)
+  * add XS-VCS-Git
+  * bump standards version
+
+ -- Guido Guenther <agx@sigxcpu.org>  Tue, 18 Dec 2007 13:22:07 +0100
+
+python-xattr (0.4-2) unstable; urgency=low
+
+  * depend on python-setuptools (Closes: #415542)
+
+ -- Guido Guenther <agx@sigxcpu.org>  Tue, 20 Mar 2007 18:45:38 +0100
+
+python-xattr (0.4-1) unstable; urgency=low
+
+  * New Upstream Version
+  * debian/patches/version: drop, fixed upstream
+  * debian/patches/tool.py-add-missing-global: add, fix attribute display in
+    xattr
+
+ -- Guido Guenther <agx@sigxcpu.org>  Tue, 20 Mar 2007 00:10:07 +0100
+
+python-xattr (0.2-3) unstable; urgency=low
+
+  * correct version number in __init__.py
+  * build-depend on python-all-dev so all we build for all available python
+    versions (Closes: #387013)
+
+ -- Guido Guenther <agx@sigxcpu.org>  Mon, 11 Sep 2006 23:21:08 +0200
+
+python-xattr (0.2-2) unstable; urgency=low
+
+  * upload to unstable since we actually provide the same functionality as
+    python-pykerberos and therefore can safely provide/replace it
+  * don't install INSTALLING.txt
+
+ -- Guido Guenther <agx@sigxcpu.org>  Mon, 11 Sep 2006 14:44:19 +0200
+
+python-xattr (0.2-1) experimental; urgency=low
+
+  * Initial release
+
+ -- Guido Guenther <agx@sigxcpu.org>  Wed,  6 Sep 2006 15:52:03 +0200

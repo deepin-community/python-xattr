@@ -1,0 +1,26 @@
+#!/bin/sh
+
+set -e
+
+cd "$AUTOPKGTEST_TMP"
+
+FILE="file"
+NAME="user.n"
+VALUE="hi"
+
+touch "$FILE"
+echo -n "Save: "
+xattr -w "$NAME" "$VALUE" "$FILE"
+echo "OK"
+
+echo -n "Read: "
+RET=$(xattr -p "$NAME" "$FILE")
+echo "OK"
+
+echo -n "Compare: "
+if [ "$RET" = "$VALUE" ] ; then
+    echo "OK"
+else
+    echo "ERROR: $RET != $VALUE"
+    exit 1
+fi

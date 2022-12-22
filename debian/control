@@ -1,0 +1,48 @@
+Source: python-xattr
+Section: python
+Priority: optional
+Maintainer: Federico Ceratto <federico@debian.org>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-python,
+ python3-all-dev,
+ python3-cffi,
+ python3-setuptools,
+Standards-Version: 4.5.0
+Rules-Requires-Root: no
+Homepage: https://github.com/xattr/xattr
+Vcs-Git: https://salsa.debian.org/debian/python-xattr.git
+Vcs-Browser: https://salsa.debian.org/debian/python-xattr
+Testsuite: autopkgtest-pkg-python
+
+Package: xattr
+Architecture: any
+Section: utils
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ ${shlibs:Depends},
+ python3-xattr (=${binary:Version}),
+ python3-pkg-resources,
+Description: tool for manipulating filesystem extended attributes
+ xattr tool allows manipulation of the filesystem extended attributes present
+ in some operating systems (GNU/Linux included).
+ .
+ This package contains the xattr cli tool.
+
+Package: python3-xattr
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${python3:Depends},
+ ${shlibs:Depends},
+Conflicts: python3-pyxattr
+Provides: ${python3:Provides}
+ , python3-pyxattr
+Description: module for manipulating filesystem extended attributes - Python 3
+ This module allows manipulation of the filesystem extended attributes present
+ in some operating systems (GNU/Linux included). It is compatible to
+ python-pyxattr but also provides a dictionary like interfaces for manipulating
+ these attributes.
+ .
+ This package contains the Python 3.x module.
